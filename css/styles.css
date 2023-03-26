@@ -9,6 +9,7 @@ font-family: 'Open Sans', sans-serif;
     --primary400: #6C63FF;
     --neutral100: #FFFFFF;
     --neutral300: #9893A3;
+    --neutral400: #717082;
     --neutral500: #2F2E41;
 
     /* Fonts */
@@ -16,11 +17,17 @@ font-family: 'Open Sans', sans-serif;
     --secondaryFont: 'Open Sans', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0
+}
+
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 5rem;
+    flex-wrap: wrap;
 }
 
 .nav-items {
@@ -45,6 +52,12 @@ font-family: 'Open Sans', sans-serif;
     text-decoration-thickness: 3px;
     text-decoration-color: var(--primary300);
 
+}
+
+.auth-btns {
+    display: flex;
+    gap: 1rem;
+    margin-top: .625rem;
 }
 
 .primary-btn {
@@ -76,4 +89,270 @@ font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: var(--neutral100);
     cursor: pointer;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 4.75rem;
+}
+
+.hero-container h1 {
+    font-family: var(--primaryFont);
+    font-size: 5.375rem;
+    font-weight: 700;
+    line-height: 88px;
+    color: var(--neutral500);
+    letter-spacing: -1px;
+}
+
+.hero-container p {
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.125;
+    color: var(--neutral300);
+}
+
+.main-container {
+    margin-top: 2.875rem;
+}
+
+.parthners-container {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.info-container {
+    margin-top: 13.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 11.25rem;
+}
+
+.info-container h2 {
+    color: var(--neutral500);
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 4rem;
+    letter-spacing: -1px;
+}
+
+.info-container p {
+    color: var(--neutral300);
+    font-family: var(--secondaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13.75rem;
+}
+
+.pricing-container h2 {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 4rem;
+    letter-spacing: -1px;
+    color: var(--neutral500);
+
+}
+
+.price-cards-container {
+    display: flex;
+    gap: 2.8125rem;
+    margin-top: 5.625rem;
+    align-items: center;
+}
+
+.price-card-wrapper {
+    width: 22.75rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 46px 88px;
+    gap: 30px;
+    background: rgba(236, 235, 255, 0.3);
+    border-radius: 2px;
+    height: 100%;
+}
+
+.price-card-wrapper p {
+    font-family: var(--secondaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: var(--neutral400);
+}
+
+.price-card-wrapper h3 {
+    font-family: var(--secondaryFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 3.5rem;
+    text-align: center;
+    letter-spacing: -2px;
+    color: var(--neutral500);
+}
+
+.price-card-wrapper h3 span {
+    font-weight: normal;
+    font-size: 1.125rem;
+    letter-spacing: -1px;
+}
+
+.price-card-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: .875rem;
+    font-family: var(--secondaryFont);
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: var(--neutral400);
+}
+
+.price-card-wrapper button {
+    padding: 1rem 1.875rem;
+    gap: .625rem;
+    border: 1px solid var(--primary400);
+    border-radius: 2px;
+    background-color: transparent;
+    font-family: var(--secondaryFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: .875rem;
+    color: var(--primary400);
+    cursor: pointer;
+}
+
+.price-card-wrapper.main {
+    background: #6C63FF;
+    height: 31.375rem;
+}
+
+.price-card-wrapper.main button {
+    background-color: var(--neutral100);
+    color: var(--primary400);
+    width: 11.625rem;
+    border-radius: 3px;
+}
+
+.price-card-wrapper.main * {
+    color: var(--neutral100)
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    gap: 12.5rem;
+    margin-top: 11rem;
+}
+
+.contact-container {
+    display: flex;
+    background-color: var(--neutral500);
+    width: 56.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 12.5rem;
+    padding: 5.25rem 0;
+}
+
+.contact-container h3 {
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    font-size: 3.125rem;
+    color: var(--neutral100);
+}
+
+.contact-container button {
+    background: var(--primary400);
+    border: 1px solid #6C63FF;
+    border-radius: 2px;
+    padding: 16px 30px;
+    width: 186px;
+    color: var(--neutral100);
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--neutral100);
+}
+
+.footer {
+    margin-top: 5.625rem;
+    display: flex;
+    justify-content: center;
+    gap: 10.375rem;
+    background: rgba(236, 235, 255, 0.6);
+    padding-top: 15.25rem;
+    padding-bottom: 8.75rem;
+}
+
+.footer-column {
+    font-family: var(--secondaryFont);
+    color: var(--neutral400);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-column strong {
+    font-size: 1.125rem;
+    color: var(--neutral500);
+} 
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer ul li {
+    cursor: pointer;
+}
+
+#footer-column-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.under-footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8rem;
+    align-items: center;
+    background: rgba(236, 235, 255, 0.6);
+    font-family: var(--secondaryFont);
+    font-size: .75rem;
+    color: #9893A3;
+    padding-bottom: 2.5rem;
 }
