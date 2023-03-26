@@ -131,6 +131,12 @@ font-family: 'Open Sans', sans-serif;
     color: var(--neutral300);
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
 .main-container {
     margin-top: 2.875rem;
 }
