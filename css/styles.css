@@ -1,0 +1,79 @@
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+:root {
+    /* Colors */
+    --primary300: #9E99FF;
+    --primary400: #6C63FF;
+    --neutral100: #FFFFFF;
+    --neutral300: #9893A3;
+    --neutral500: #2F2E41;
+
+    /* Fonts */
+    --primaryFont: 'Playfair Display', serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+    font-family: open;
+    list-style: none;
+    font-family: var(--secondaryFont);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--neutral300);
+}
+
+.nav-items li {
+    cursor: pointer;
+}
+
+.clicked-item {
+    color: var(--neutral500);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--primary300);
+
+}
+
+.primary-btn {
+    width: 102px;
+    height: 51px;
+    border: 1px solid var(--primary400);
+    border-radius: 2px;
+    background-color: transparent;
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary400);
+    cursor: pointer;
+}
+
+.secondary-btn {
+    width: 140px;
+    height: 51px;
+    background: var(--primary400);
+    border: 1px solid var(--primary400);
+    border-radius: 2px;
+    font-family: var(--secondaryFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--neutral100);
+    cursor: pointer;
+}
