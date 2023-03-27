@@ -73,6 +73,12 @@
     text-align: center;
     color: var(--primary400);
     cursor: pointer;
+    transition: 0.1s;
+}
+
+.primary-btn:hover {
+    background: var(--primary400);
+    color: var(--neutral100);
 }
 
 .secondary-btn {
@@ -89,6 +95,12 @@
     text-align: center;
     color: var(--neutral100);
     cursor: pointer;
+    transition: 0.1s;
+}
+
+.secondary-btn:hover {
+    background: var(--neutral100);
+    color: var(--primary400);
 }
 
 .hero-container {
