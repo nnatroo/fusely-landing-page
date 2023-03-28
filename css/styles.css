@@ -367,6 +367,12 @@
     text-align: center;
     color: var(--neutral100);
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-container button:hover {
+    background: var(--neutral100);
+    color: var(--primary400);
 }
 
 .footer {
