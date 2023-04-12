@@ -602,3 +602,35 @@
         padding-inline: 1rem;
     }
 }
+
+@media only screen and (max-width: 376px) {
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-img {
+        width: 100%;
+
+    }
+
+    .info-img {
+        width: 100%;
+
+    }
+
+    .price-cards-container {
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        gap: 6rem;
+    }
+
+    .price-card-wrapper {
+        width: 90%;
+        font-size: 0.1rem;
+        padding: 10%;
+    }
+  }
