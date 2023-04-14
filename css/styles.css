@@ -633,4 +633,9 @@
         font-size: 0.1rem;
         padding: 10%;
     }
+
+    .contact-container {
+        padding: 5.25rem 2rem;
+    }
+
   }
